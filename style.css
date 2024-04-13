@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", opensans;
+}
+
+.header {
+    background-color: #5e0b15;
+    height: 100vh;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+body:not(.header) {
+    background-color: #fff;
+}
+
+.nav-logo a h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fe9148;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.profile-photo {
+    width: 400px;
+}
+
+.profile-photo img {
+    width: 100%;
+    display: flex;
+    border: solid 5px #aa6130;
+}
+
+li {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: 2rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav .nav-links a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fe9148;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #fe9148;
+    color: #fff;
+    cursor: pointer;
+    font-family: "roboto", opensans;
+    border: solid 1px #fe9148;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5e0b15;
+    color: #fe9148;
+    border: solid 1px #fe9148;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.container-header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+header .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.content .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.content .left-content h1 {
+    color: #fff;
+}
+
+.content .left-content h3 {
+    color: #fff;
+}
+
+.container .title {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e0b15;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.about-me .left-information {
+    width: 500px;
+}
+
+.about-me .left-information img {
+    width: 100%;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.about-me .right-information p {
+    width: 350px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.container .cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.container .cards .instagram,
+.container .cards .linkedin,
+.container .cards .linktr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    border: solid 3px #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+}
+
+.container .cards .instagram:hover,
+.container .cards .linkedin:hover,
+.container .cards .linktr:hover {
+    border: solid 3px #fe9148;
+}
+
+.container .cards .instagram h3 {
+    font-size: 20px;
+}
+
+.ebook{
+    margin-top: 80px;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.copyright a{
+    color: #407bff;
+}
+
+.copyright a:hover{
+    text-decoration: underline;
+}
