@@ -245,3 +245,64 @@ header .content {
 .copyright a:hover{
     text-decoration: underline;
 }
+
+@media (width < 900px){
+
+    .nav-logo{
+        text-shadow: 3px 2px 19px rgba(0, 0, 0, 0.62);
+    }
+
+    .header {
+        background-image: url(assets/profile-photo.png);
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-position-y: 5%;
+        background-position-x:center;
+    }
+
+    nav .nav-links{
+        display: none;
+    }
+
+    header .content{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .content .left-content{
+        text-shadow: 3px 2px 19px rgba(0, 0, 0, 0.62);
+    }
+
+    .container{
+        max-width: auto;
+    }
+
+    .right-content{
+        display: none;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .about-me .left-information img{
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .about-me .right-information p{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container .cards{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+    }
+}
